@@ -7,7 +7,7 @@ from ai_service import build_client, stream_response
 GROQ_API_KEY = "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"
 MODEL_NAME   = "llama-3.3-70b-versatile"
 ROADMAP_TRIGGER = (
-    "💡 If you like this roadmap, you can instantly download this entire "
+    "If you like this roadmap, you can instantly download this entire "
     "conversation as a beautifully formatted PDF using the button below!"
 )
 
