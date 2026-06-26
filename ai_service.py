@@ -1,5 +1,5 @@
 from groq import Groq
-from typing import Generator
+from typing import Generator, List, Dict
 
 SYSTEM_PROMPT = """
 You are EduNav AI — a sharp, friendly, and highly knowledgeable career guide and educator.
@@ -26,7 +26,7 @@ Roadmap trigger rule (VERY STRICT):
 def build_client(api_key: str) -> Groq:
     return Groq(api_key=api_key)
 
-def stream_response(client: Groq, model_name: str, history: list[dict], user_message: str) -> Generator[str, None, None]:
+def stream_response(client: Groq, model_name: str, history: List[Dict], user_message: str) -> Generator[str, None, None]:
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for turn in history:
         messages.append({"role": "assistant" if turn["role"]=="assistant" else "user", "content": turn["content"]})
