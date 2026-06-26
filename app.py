@@ -4,7 +4,7 @@ from fpdf.enums import XPos, YPos
 import datetime
 from ai_service import build_client, stream_response
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 MODEL_NAME   = "llama-3.3-70b-versatile"
 ROADMAP_TRIGGER = (
     "If you like this roadmap, you can instantly download this entire "
