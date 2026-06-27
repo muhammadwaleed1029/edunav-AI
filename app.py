@@ -26,7 +26,7 @@ html, body, [class*="css"] { font-family:'Inter',sans-serif !important; color:va
 .stApp > header, .stApp [data-testid="stAppViewContainer"], .stApp [data-testid="stHeader"] { background:transparent !important; }
 footer { display:none !important; }
 #MainMenu { visibility:hidden !important; }
-[data-testid="stToolbar"], [data-testid="stDecoration"] { display:none !important; }
+
 [data-testid="stSidebar"] { background:rgba(20,18,40,0.97) !important; border-right:1px solid rgba(108,99,255,0.25); }
 [data-testid="stSidebar"] * { color:var(--text) !important; }
 .block-container { max-width:780px !important; padding-top:2rem !important; padding-bottom:5rem !important; background:transparent !important; }
